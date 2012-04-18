@@ -20,6 +20,8 @@
 		338D5D78153F708500E99CC8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338D5D77153F708500E99CC8 /* MessageUI.framework */; };
 		338D5D7A153F708C00E99CC8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338D5D79153F708C00E99CC8 /* CoreData.framework */; };
 		338D5D7C153F709400E99CC8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338D5D7B153F709400E99CC8 /* QuartzCore.framework */; };
+		338D5D98153F72A500E99CC8 /* LifeCycleTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 338D5D96153F72A500E99CC8 /* LifeCycleTestViewController.xib */; };
+		338D5D99153F72A500E99CC8 /* LifeCycleTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 338D5D97153F72A500E99CC8 /* LifeCycleTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,10 +39,13 @@
 		338D5D42153F5FF200E99CC8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		338D5D45153F5FF200E99CC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		338D5D48153F5FF200E99CC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
-		338D5D75153F707500E99CC8 /* libCoconutKit.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libCoconutKit.a; path = "CoconutKit/CoconutKit/build/Release-iphoneos/libCoconutKit.a"; sourceTree = "<group>"; };
+		338D5D75153F707500E99CC8 /* libCoconutKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCoconutKit.a; path = "CoconutKit/CoconutKit/build/Release-iphoneos/libCoconutKit.a"; sourceTree = "<group>"; };
 		338D5D77153F708500E99CC8 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		338D5D79153F708C00E99CC8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		338D5D7B153F709400E99CC8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		338D5D95153F72A500E99CC8 /* LifeCycleTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LifeCycleTestViewController.h; sourceTree = "<group>"; };
+		338D5D96153F72A500E99CC8 /* LifeCycleTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LifeCycleTestViewController.xib; sourceTree = "<group>"; };
+		338D5D97153F72A500E99CC8 /* LifeCycleTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LifeCycleTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +107,9 @@
 				338D5D42153F5FF200E99CC8 /* ViewController.m */,
 				338D5D44153F5FF200E99CC8 /* ViewController_iPhone.xib */,
 				338D5D47153F5FF200E99CC8 /* ViewController_iPad.xib */,
+				338D5D95153F72A500E99CC8 /* LifeCycleTestViewController.h */,
+				338D5D97153F72A500E99CC8 /* LifeCycleTestViewController.m */,
+				338D5D96153F72A500E99CC8 /* LifeCycleTestViewController.xib */,
 			);
 			name = Sources;
 			path = SegmentContainer;
@@ -173,6 +181,7 @@
 				338D5D3A153F5FF200E99CC8 /* InfoPlist.strings in Resources */,
 				338D5D46153F5FF200E99CC8 /* ViewController_iPhone.xib in Resources */,
 				338D5D49153F5FF200E99CC8 /* ViewController_iPad.xib in Resources */,
+				338D5D98153F72A500E99CC8 /* LifeCycleTestViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +195,7 @@
 				338D5D3C153F5FF200E99CC8 /* main.m in Sources */,
 				338D5D40153F5FF200E99CC8 /* AppDelegate.m in Sources */,
 				338D5D43153F5FF200E99CC8 /* ViewController.m in Sources */,
+				338D5D99153F72A500E99CC8 /* LifeCycleTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
