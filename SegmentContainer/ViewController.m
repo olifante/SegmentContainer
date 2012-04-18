@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LifeCycleTestViewController.h"
 
 @interface ViewController ()
 
@@ -14,25 +15,22 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad
+- (void)displayInsetViewController:(UIViewController *)viewController
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    // We can even embbed navigation and tab bar controllers within a placeolder view controller!
+    UIViewController *insetViewController = viewController;
+    [self setInsetViewController:insetViewController withTransitionStyle:HLSTransitionStylePushFromTop];
 }
 
-- (void)viewDidUnload
+- (IBAction)displayLifeCycleTest:(id)sender
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
+    LifeCycleTestViewController *lifecycleTestViewController = [[LifeCycleTestViewController alloc] init];
+    [self displayInsetViewController:lifecycleTestViewController];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+- (IBAction)remove:(id)sender
 {
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    } else {
-        return YES;
-    }
+    [self displayInsetViewController:nil];
 }
 
 @end
