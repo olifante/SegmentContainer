@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CoconutKit/CoconutKit/CoconutKit.xcodeproj">
+      location = "container:SegmentContainer.xcodeproj">
    </FileRef>
    <FileRef
-      location = "container:SegmentContainer.xcodeproj">
+      location = "group:CoconutKit/CoconutKit/CoconutKit.xcodeproj">
    </FileRef>
 </Workspace>
