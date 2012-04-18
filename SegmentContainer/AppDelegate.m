@@ -10,6 +10,7 @@
 
 #import "ViewController.h"
 #import "HLSPlaceholderViewController.h"
+#import "LifeCycleTestViewController.h"
 
 @implementation AppDelegate
 
@@ -20,6 +21,8 @@
 {
     HLSPlaceholderViewController *phvc = [[HLSPlaceholderViewController alloc] init];
     NSLog(@"phvc: %@", phvc);
+    LifeCycleTestViewController *lcvc = [[LifeCycleTestViewController alloc] init];
+    NSLog(@"lcvc: %@", lcvc);
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.

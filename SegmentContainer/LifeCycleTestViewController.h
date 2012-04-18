@@ -6,6 +6,8 @@
 //  Copyright 2011 Hortis. All rights reserved.
 //
 
+#import "HLSViewController.h"
+
 /**
  * A view controller logging view lifecycle events
  */

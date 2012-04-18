@@ -7,6 +7,9 @@
 //
 
 #import "LifeCycleTestViewController.h"
+#import "HLSLogger.h"
+#import "UIColor+HLSExtensions.h"
+#import "NSObject+HLSExtensions.h"
 
 @implementation LifeCycleTestViewController
 
