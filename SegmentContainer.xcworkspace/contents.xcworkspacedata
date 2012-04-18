@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CoconutKit/CoconutKit/CoconutKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:SegmentContainer.xcodeproj">
+   </FileRef>
+</Workspace>
