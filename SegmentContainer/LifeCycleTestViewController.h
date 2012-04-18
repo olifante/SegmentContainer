@@ -11,9 +11,8 @@
 /**
  * A view controller logging view lifecycle events
  */
-@interface LifeCycleTestViewController : HLSViewController {
-@private
-    
-}
+@interface LifeCycleTestViewController : HLSViewController
+
+- (id)initWithColor:(UIColor *)color;
 
 @end

@@ -15,10 +15,10 @@
 
 #pragma mark Object creation and destruction
 
-- (id)init
+- (id)initWithColor:(UIColor *)color
 {
     if ((self = [super initWithNibName:[self className] bundle:nil])) {
-        
+        self.view.backgroundColor = color;
     }
     return self;
 }
@@ -28,8 +28,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.view.backgroundColor = [UIColor randomColor];    
     
     HLSLoggerInfo(@"Called for object %@", self);
 }

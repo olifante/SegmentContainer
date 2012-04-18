@@ -24,7 +24,24 @@
 
 - (IBAction)displayLifeCycleTest:(id)sender
 {
-    LifeCycleTestViewController *lifecycleTestViewController = [[LifeCycleTestViewController alloc] init];
+    UISegmentedControl *segments = (UISegmentedControl *)sender;
+    LifeCycleTestViewController *lifecycleTestViewController;
+    switch (segments.selectedSegmentIndex) {
+        case 0:
+            lifecycleTestViewController = [[LifeCycleTestViewController alloc] initWithColor:[UIColor redColor]];
+            break;
+            
+        case 1:
+            lifecycleTestViewController = [[LifeCycleTestViewController alloc] initWithColor:[UIColor greenColor]];
+            break;
+            
+        case 2:
+            lifecycleTestViewController = [[LifeCycleTestViewController alloc] initWithColor:[UIColor blueColor]];
+            break;
+            
+        default:
+            break;
+    }
     [self displayInsetViewController:lifecycleTestViewController];
 }
 
