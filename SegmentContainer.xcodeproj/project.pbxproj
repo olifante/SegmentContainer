@@ -16,6 +16,10 @@
 		338D5D43153F5FF200E99CC8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 338D5D42153F5FF200E99CC8 /* ViewController.m */; };
 		338D5D46153F5FF200E99CC8 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 338D5D44153F5FF200E99CC8 /* ViewController_iPhone.xib */; };
 		338D5D49153F5FF200E99CC8 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 338D5D47153F5FF200E99CC8 /* ViewController_iPad.xib */; };
+		338D5D76153F707500E99CC8 /* libCoconutKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 338D5D75153F707500E99CC8 /* libCoconutKit.a */; };
+		338D5D78153F708500E99CC8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338D5D77153F708500E99CC8 /* MessageUI.framework */; };
+		338D5D7A153F708C00E99CC8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338D5D79153F708C00E99CC8 /* CoreData.framework */; };
+		338D5D7C153F709400E99CC8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338D5D7B153F709400E99CC8 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		338D5D42153F5FF200E99CC8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		338D5D45153F5FF200E99CC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		338D5D48153F5FF200E99CC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		338D5D75153F707500E99CC8 /* libCoconutKit.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libCoconutKit.a; path = "CoconutKit/CoconutKit/build/Release-iphoneos/libCoconutKit.a"; sourceTree = "<group>"; };
+		338D5D77153F708500E99CC8 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		338D5D79153F708C00E99CC8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		338D5D7B153F709400E99CC8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				338D5D7C153F709400E99CC8 /* QuartzCore.framework in Frameworks */,
+				338D5D7A153F708C00E99CC8 /* CoreData.framework in Frameworks */,
+				338D5D78153F708500E99CC8 /* MessageUI.framework in Frameworks */,
+				338D5D76153F707500E99CC8 /* libCoconutKit.a in Frameworks */,
 				338D5D30153F5FF200E99CC8 /* UIKit.framework in Frameworks */,
 				338D5D32153F5FF200E99CC8 /* Foundation.framework in Frameworks */,
 				338D5D34153F5FF200E99CC8 /* CoreGraphics.framework in Frameworks */,
@@ -52,6 +64,10 @@
 		338D5D20153F5FF200E99CC8 = {
 			isa = PBXGroup;
 			children = (
+				338D5D7B153F709400E99CC8 /* QuartzCore.framework */,
+				338D5D79153F708C00E99CC8 /* CoreData.framework */,
+				338D5D77153F708500E99CC8 /* MessageUI.framework */,
+				338D5D75153F707500E99CC8 /* libCoconutKit.a */,
 				338D5D35153F5FF200E99CC8 /* SegmentContainer */,
 				338D5D2E153F5FF200E99CC8 /* Frameworks */,
 				338D5D2C153F5FF200E99CC8 /* Products */,
@@ -259,6 +275,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SegmentContainer/SegmentContainer-Prefix.pch";
+				HEADER_SEARCH_PATHS = "CoconutKit/CoconutKit/**";
 				INFOPLIST_FILE = "SegmentContainer/SegmentContainer-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -270,6 +287,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SegmentContainer/SegmentContainer-Prefix.pch";
+				HEADER_SEARCH_PATHS = "CoconutKit/CoconutKit/**";
 				INFOPLIST_FILE = "SegmentContainer/SegmentContainer-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
