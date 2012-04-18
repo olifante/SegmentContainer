@@ -289,6 +289,7 @@
 				GCC_PREFIX_HEADER = "SegmentContainer/SegmentContainer-Prefix.pch";
 				HEADER_SEARCH_PATHS = "CoconutKit/CoconutKit/**";
 				INFOPLIST_FILE = "SegmentContainer/SegmentContainer-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -301,6 +302,7 @@
 				GCC_PREFIX_HEADER = "SegmentContainer/SegmentContainer-Prefix.pch";
 				HEADER_SEARCH_PATHS = "CoconutKit/CoconutKit/**";
 				INFOPLIST_FILE = "SegmentContainer/SegmentContainer-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
