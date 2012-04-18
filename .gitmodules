@@ -1,0 +1,3 @@
+[submodule "CoconutKit"]
+	path = CoconutKit
+	url = git://github.com/defagos/CoconutKit.git
