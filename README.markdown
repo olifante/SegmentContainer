@@ -20,6 +20,9 @@ Only then should you open the workspace (NOT the project):
 
 * open SegmentContainer.xcworkspace
 
+#### Version 1.0.1
+Activated logging of the lifecycle of the inset view controllers
+
 #### Version 1.0
 Initial release
 
